@@ -1,0 +1,82 @@
+/* Rule */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive sans-serif;
+}
+
+header {
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
+
+h2 {
+  /* font-size: 26px; */
+  padding: 20px 0px;
+}
+
+h3 {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+ul {
+  list-style: none;
+  /* display: flex; */
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-list li {
+  /* margin: 0 15px; */
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.image {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.second-paragraph ul {
+  list-style: disc;
+}
+
+.second-paragraph ul li {
+  font-style: italic;
+}
+
+footer {
+  background-color: #4caf50;
+  text-align: center;
+}

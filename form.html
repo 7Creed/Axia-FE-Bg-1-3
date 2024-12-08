@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="./styles/formstyle.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Axia Registration</h2>
+      <hr />
+      <h4>Please fill the form below to get on the Axia train</h4>
+      <hr />
+    </header>
+
+    <main>
+      <!-- Form Area -->
+      <section class="container">
+        <form>
+          <fieldset>
+            <legend>Bio-Data</legend>
+            <div class="text-area">
+              <label for="firstname">First Name</label>
+              <br />
+              <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+
+            <div class="text-area">
+              <label for="lastname">Last Name</label>
+              <br />
+              <input
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+
+            <div class="text-area">
+              <label for="gender">Gender</label>
+              <br />
+              <select name="gender" id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+              </select>
+            </div>
+
+            <div class="text-area">
+              <label for="age">Age (optional)</label>
+              <br />
+              <!-- <input type="date" /> -->
+              <input id="age" type="number" name="age" min="1" max="100" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Application</legend>
+            <div class="text-area">
+              <p>Do you have a laptop</p>
+              <input type="radio" name="laptop" id="yes" value="yes" />
+              <label for="yes">Yes</label>
+
+              <input type="radio" name="laptop" id="no" value="no" />
+              <label value="no">No</label>
+            </div>
+
+            <div class="text-area">
+              <label for="question">How did you hear about Axia</label> <br />
+              <input
+                id="whatsapp"
+                type="checkbox"
+                name="question"
+                value="whatsapp"
+              />
+              <label for="question">Whatsapp</label> <br />
+              <input
+                id="youtube"
+                type="checkbox"
+                name="question"
+                value="youtube"
+              />
+              <label for="question">Youtube</label> <br />
+              <input
+                id="instagram"
+                type="checkbox"
+                name="question"
+                value="instagram"
+              />
+              <label for="question">Instagram</label><br />
+            </div>
+
+            <div class="text-area">
+              <label for="about">Tell us bout yourself</label> <br />
+              <textarea
+                id="about"
+                name="about"
+                placeholder="type here..."
+                rows="4"
+                cols="30"
+                maxlength="50"
+                minlength="5"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
